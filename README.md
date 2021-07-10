@@ -8,7 +8,7 @@ yarn install
 yarn start
 ```
 
-## npm (not recomended)
+## npm (not recommended)
 ```
 npm install
 npm run start
