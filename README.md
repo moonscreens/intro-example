@@ -1,4 +1,4 @@
-# intro screen starter template
+# 2D Canvas starter template
 A starter template for 2d canvas based intro screens
 
 
