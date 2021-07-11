@@ -1,5 +1,5 @@
 {
-  "name": "borpaspin",
+  "name": "intro-example",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,15 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/moonscreens/borpaspin.git"
+    "url": "git+https://github.com/moonscreens/intro-example.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/moonscreens/borpaspin/issues"
+    "url": "https://github.com/moonscreens/intro-example/issues"
   },
-  "homepage": "https://github.com/moonscreens/borpaspin#readme",
+  "homepage": "https://github.com/moonscreens/intro-example#readme",
   "dependencies": {
+    "html-webpack-plugin": "^5.3.2",
     "twitch-chat-emotes": "^0.2.1",
     "webpack": "^5.44.0",
     "webpack-cli": "^4.7.2"
