@@ -1,3 +1,4 @@
+import './main.css';
 import Chat from 'twitch-chat-emotes';
 
 // a default array of twitch channels to join
