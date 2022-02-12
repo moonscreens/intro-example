@@ -3,7 +3,6 @@ A starter template for 2d canvas based intro screens. [MDN has some great resour
 
 # Development
 
-## npm
 ```
 npm install
 npm run start
