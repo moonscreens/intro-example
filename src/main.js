@@ -32,13 +32,14 @@ resize();
 window.addEventListener('resize', resize);
 
 
-let lastFrame = Date.now();
+let lastFrame = performance.now();
 // Called once per frame
 function draw() {
     window.requestAnimationFrame(draw);
 
     // number of seconds since the last frame was drawn
-    const delta = (Date.now() - lastFrame) / 1000;
+    const delta = Math.min(1, Math.max(0, (performance.now() - lastFrame) / 1000));
+    lastFrame = performance.now();
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -60,7 +61,6 @@ function draw() {
         }
     }
 
-    lastFrame = Date.now();
 }
 
 // add a callback function for when a new message with emotes is sent
