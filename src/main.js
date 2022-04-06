@@ -9,8 +9,10 @@ const query_vars = {};
 const query_parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
     query_vars[key] = value;
 });
-if (query_vars.channels) {
-    channels = query_vars.channels.split(',');
+
+if (query_vars.channels || query_vars.channel) {
+	const temp = query_vars.channels || query_vars.channel;
+	channels = temp.split(',');
 }
 
 // create our chat instance
