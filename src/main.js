@@ -68,6 +68,10 @@ function draw() {
 // add a callback function for when a new message with emotes is sent
 const emoteArray = [];
 ChatInstance.on("emotes", (emotes) => {
+
+	//prevent lag caused by emote buildup when you tab out from the page for a while
+	if (performance.now() - lastFrame > 1000) return;
+
 	emoteArray.push({
 		emotes,
 		x: Math.floor(Math.random() * canvas.width),
